@@ -1,9 +1,73 @@
-
+* {outline: 2px dotted purple;}
 body {
     background-color: hsl(216, 12%, 8%);
     font-family: 'Overpass', sans-serif;
-    color: hsl(213, 19%, 18%);
+    color:hsl(216, 18%, 65%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: auto 30px;
 }
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.card {
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.star-container, 
+.rating-number {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color:hsl(227, 8%, 23%);
+}
+
+svg {
+    position: relative;
+    left: 9px;
+    bottom:-9px;
+}
+
+.title h2 {
+    color:hsl(0, 0%, 100%);
+}
+
+.rating-selection {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.rating-number p {
+    position: relative;
+    left: 12px;
+    bottom: 6px;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit input {
+    background-color: hsl(25, 97%, 53%);
+    width: 300px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+footer {
+    margin: 40px;
+}
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+
+.attribution a {
+     color: hsl(228, 45%, 44%); 
+    }
