@@ -1,4 +1,4 @@
-* {outline: 2px dotted purple;}
+/* * {outline: 2px dotted purple;} */
 body {
     background-color: hsl(216, 12%, 8%);
     font-family: 'Overpass', sans-serif;
@@ -9,13 +9,12 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    /* margin: auto 5%; */
 }
 
 .card {
     background-color: hsl(213, 19%, 18%);
     border-radius: 10px;
-    padding: 10px;
+    padding: 30px 20px;
     width:85%;
 }
 
@@ -78,14 +77,32 @@ svg {
     text-transform: uppercase;
 }
 
-
 footer {
     margin: 40px;
 }
+
 .attribution { 
     font-size: 11px; text-align: center; 
 }
 
 .attribution a {
      color: hsl(228, 45%, 44%); 
+}
+
+@media only screen and (min-width:425px) {
+    .card {
+        width:50%;
+    }
+}
+
+@media only screen and (min-width:768px) {
+    .card {
+        width:35%;
+    }
+}
+
+@media only screen and (min-width:1440px) {
+    .card {
+        width:20%;
+    }
 }
