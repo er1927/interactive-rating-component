@@ -52,10 +52,20 @@ svg {
     font-size: 14px;
 }
 
+.rating-number:hover {
+    background-color: hsl(0, 1%, 58%);
+    color:white;
+}
+
 .submit {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.submit input:hover {
+    background-color: white;
+    color:hsl(25, 97%, 53%)
 }
 
 .submit input {
