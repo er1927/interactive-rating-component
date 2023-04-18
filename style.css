@@ -1,4 +1,4 @@
-/* * {outline: 2px dotted purple;} */
+* {outline: 2px dotted purple;}
 body {
     background-color: hsl(216, 12%, 8%);
     font-family: 'Overpass', sans-serif;
@@ -9,7 +9,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    margin: auto 30px;
+    /* margin: auto 5%; */
 }
 
 .card {
@@ -40,6 +40,7 @@ svg {
 .text {
     font-weight: lighter;
 }
+
 .rating-selection {
     display: flex;
     justify-content: space-evenly;
