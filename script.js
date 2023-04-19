@@ -9,11 +9,13 @@ const yourSelection = document.getElementById("your-selection");
 const title= document.getElementById("title");
 const text = document.getElementById("text");
 const ratingSelection = document.getElementById("rating-selection");
+const ratingNumber = document.querySelectorAll("rating-number");
 const submitDiv = document.getElementById("submit");
+let num = ratingNumber.innerHTML;
 
 function selectRatingNumberOne() {
     one.style.backgroundColor = "hsl(25, 97%, 53%)";
-    one.style.color = "white";
+    one.style.color = "white"; 
 }
 
 function selectRatingNumberTwo() {
@@ -36,15 +38,13 @@ function selectRatingNumberFive() {
     five.style.color = "white";
 }
 
-
-
 function submit() {
     star.remove();
     thankYouImg.style.display ="block";
-    thankYouImg.style.margin = "1px auto"
-    yourSelection.innerHTML = `You selected  out of 5`;
+    thankYouImg.style.margin = "1px auto";
     yourSelection.style.textAlign = "center";
     yourSelection.style.backgroundColor = "hsl(227, 8%, 23%)";
+    // yourSelection.innerHTML = `You selected ${num} out of 5`;
     yourSelection.style.borderRadius = "20px"
     yourSelection.style.padding = "auto 2px";
     yourSelection.style.color = "hsl(25, 97%, 53%)";
@@ -54,4 +54,3 @@ function submit() {
     ratingSelection.remove();
     submitDiv.remove();
 }
-

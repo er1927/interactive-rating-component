@@ -1,4 +1,3 @@
-/* * {outline: 2px dotted purple;} */
 body {
     background-color: hsl(216, 12%, 8%);
     font-family: 'Overpass', sans-serif;
@@ -29,6 +28,7 @@ body {
 #thank-you-img {
     display: none;
 }
+
 #star {
     position: relative;
     left: 9px;
